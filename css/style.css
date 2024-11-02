@@ -6,6 +6,7 @@
 body {
   font-family: "'Source Sans Pro', sans-serif";
   font-size: 16px;
+  color: #272044;
 }
 .site-container {
   margin: 0 auto;
@@ -24,9 +25,13 @@ body {
 .section-1-text {
   margin-right: 100px;
 }
-footer section {
+.section-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0px;
+}
+.text-center {
+  text-align: center;
 }
 header {
   color: #ffffff;
@@ -45,13 +50,13 @@ h1 {
   margin: 30px 0;
   line-height: 1;
 }
-h3 {
+header h2 {
   font-size: 40px;
   font-weight: 400;
   margin: 0;
   line-height: 1.5;
 }
-h4 {
+header h3 {
   font-size: 24px;
   font-weight: 900;
   line-height: 1.5;
@@ -59,20 +64,29 @@ h4 {
   margin: 0;
   text-transform: uppercase;
 }
-h6 {
+main h2 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   margin: 0;
   line-height: 20px;
 }
-.h6-box {
+.h2-light-box {
   background-color: #79a4ab5e;
   display: block;
-  width: 230px;
+  width: 240px;
   padding-left: 5px;
-  margin-top: 60px;
+  margin: 60px;
+  color: #1a2627;
+}
+.h2-songs-box {
+  background-color: #1a2627;
+  display: block;
+  width: 80px;
+  padding-left: 5px;
+  margin: 60px auto 0;
+  color: #ffffff;
 }
 .link-button {
   text-decoration: none;
@@ -93,14 +107,43 @@ main p {
   margin: 0;
   opacity: 0.7;
 }
-
-h2 {
+main h3 {
   font-family: var(--title-font);
   font-size: 48px;
   font-weight: 700;
   margin: 30px 0;
 }
-
+.favorite-songs {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Images/madison-beer-songs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.card-embeded-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px 10px 0 0;
+}
+.card-body p,
+.card-body h4,
+.card-body h5 {
+  padding: 0 20px;
+}
+.card-footer {
+  text-align: center;
+  padding: 0 0 30px;
+}
+h4 {
+  font-family: var(--title-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
 footer {
   color: #ffffff;
   background-image: linear-gradient(
@@ -127,7 +170,7 @@ footer li {
   margin: 0;
   padding: 0;
 }
-h5 {
+footer h3 {
   font-family: var(--title-font);
   font-size: 24px;
   line-height: 32px;
@@ -141,10 +184,10 @@ h5 {
   h1 {
     font-size: 64px;
   }
-  h3 {
+  header h2 {
     font-size: 20px;
   }
-  h4 {
+  header h3 {
     font-size: 12px;
   }
   .grid {
