@@ -10,13 +10,17 @@ body {
   margin: 0 auto;
   max-width: 1400px;
 }
-
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 header {
   color: #ffffff;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3) 50%,
-      rgba(0, 0, 0, 0.3) 50%
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.4)),
     url("../Images/Madison-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,6 +65,42 @@ h2 {
   font-family: var(--title-font);
   font-size: 48px;
   font-weight: 700;
+}
+
+footer {
+  color: #ffffff;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0.7) 50%
+    ),
+    url("../Images/madison-beer-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-family: var(--title-font);
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+footer p {
+  margin-right: 30px;
 }
 
 @media (max-width: 900px) {
