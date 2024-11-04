@@ -157,8 +157,8 @@ h4 {
   width: 160px;
 }
 .embeded-song-frame {
-  width: 370px;
-  height: 370px;
+background-color: #282828;
+border-radius: 12px;
 }
 .embeded-song {
   border-radius: 12px;
@@ -198,7 +198,14 @@ footer h3 {
   line-height: 32px;
   margin: 0;
 }
-
+@media (max-width:1250px){
+  .section-container{
+  padding: 30px 20px 60px;
+}
+.section-1-text a{
+  margin-bottom: 15px ;
+}
+}
 @media (max-width: 900px) {
   header {
     padding: 40px 0;
@@ -214,6 +221,37 @@ footer h3 {
   }
   .grid {
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 32px;
   }
+  .grid-2-col{
+   grid-template-columns: 1fr;
+  }
+  .grid-3-col{
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-responsive{
+    margin:0 auto;
+  }
+  .section-1-text{
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .h2-light-box{
+    margin: 0 auto;
+  }
+  .card{
+    margin: 0 auto;
+  }
+}
+@media (max-width:580px){
+.grid{
+  grid-template-columns: 1fr;
+}
+.first-row{
+  margin-bottom:32px;
+}
+footer{
+  text-align: center;
+}
 }
